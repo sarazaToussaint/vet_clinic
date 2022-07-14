@@ -18,3 +18,10 @@
   ALTER TABLE animals
   ADD COLUMN species varchar(20)
 
+-- Create a table named owners with id, full_name, age.
+CREATE TABLE owners(
+ id INT GENERATED ALWAYS AS IDENTITY,
+ full_name VARCHAR(100),
+ age INT,
+ PRIMARY KEY(id)
+);
