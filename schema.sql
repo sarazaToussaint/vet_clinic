@@ -40,6 +40,8 @@ Add column species_id which is a foreign key referencing species table
 Add column owner_id which is a foreign key referencing the owners table
  */
 
+ ALTER TABLE animals ADD PRIMARY KEY(id)
+
 ALTER TABLE animals DROP COLUMN species;
 
 ALTER TABLE animals ADD COLUMN species_id INT
