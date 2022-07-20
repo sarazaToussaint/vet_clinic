@@ -92,3 +92,8 @@ CREATE TABLE visits (
     FOREIGN KEY (animals_id) REFERENCES animals(id) ON UPDATE CASCADE,
     FOREIGN KEY (vets_id) REFERENCES vets(id) ON UPDATE CASCADE
 );
+
+/* Run the following query to add an extra column to the owners table: */
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
